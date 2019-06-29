@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* layout */
+.flex {
+    display: flex;
+}
+.fww {
+    flex-wrap: wrap;
+}
+.fdc {
+    flex-direction: column;
+}
+.jcc {
+    justify-content: center;
+}
+.aic {
+    align-items: center;
+}
+.h-100 {
+    height: 100%;
+}
+
+
+#app {
+    background-color: #333;
+    height: 100%;
+}
+#menu {
+    height: 24px;
+    background: #ccc;
+}
+#tools {
+    flex: 0 0 40px;
+    background-color: #444;
+}
+#documents {
+    flex: 1 0 auto;
+    background-color: #222;
+}
+#controls {
+    flex: 0 0 200px;
+    background-color: #444;
+}

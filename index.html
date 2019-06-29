@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tiny Image Editor - by Jeremy Zevin</title>
+</head>
+<body class="h-100">
+    <div id="app" class="flex fdc">
+        <header id="menu"></header>
+        <section id="main" class="flex h-100">
+            <section id="tools" class="flex h-100"></section>
+            <section id="documents" class="flex h-100"></section>
+            <section id="controls" class="flex h-100">
+                <div class="control control--layers">
+                    <div class="control-header">
+                        <div class="label">Layers</div>
+                    </div>
+                    <div class="control-body">
+                        layers body
+                        <div class="layer">
+                            <div class="layer-thumbnail"></div>
+                            <div class="layer-name"></div>
+                            <div class="layer-actions"></div>
+                        </div>
+                    </div>
+                    <div class="control-footer">Layers footer</div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
