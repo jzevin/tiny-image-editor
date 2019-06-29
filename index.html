@@ -9,10 +9,14 @@
 </head>
 <body class="h-100">
     <div id="app" class="flex fdc">
-        <header id="menu"></header>
+        <header id="menu" class="flex aic">File</header>
         <section id="main" class="flex h-100">
             <section id="tools" class="flex h-100"></section>
-            <section id="documents" class="flex h-100"></section>
+            <section id="documents" class="flex jcc aic h-100">
+                <!-- <div class="document" class="flex jcc aic h-100">
+                    <canvas class="layer" width="400" height="400"></canvas>
+                </div> -->
+            </section>
             <section id="controls" class="flex h-100">
                 <div class="control control--layers">
                     <div class="control-header">
@@ -26,11 +30,15 @@
                             <div class="layer-actions"></div>
                         </div>
                     </div>
-                    <div class="control-footer">Layers footer</div>
+                    <div class="control-footer">
+                        <button class="btn btn--add-layer">add layer</button>
+                    </div>
                 </div>
             </section>
         </section>
     </div>
-    <script src="app.js"></script>
+    <script type="module" src="./lib/View.mjs"></script>
+    <script type="module" src="./lib/CanvasDocument.mjs"></script>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
