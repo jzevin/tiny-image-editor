@@ -43,15 +43,24 @@ body {
     background-color: #444;
 }
 #documents {
-    flex: 1 0 auto;
+    flex: 0 0 calc(100vw - 240px);
     background-color: #222;
-}
-.document .layer{
-    /* background: #ccc; */
-    outline: 1px dashed #444;
+    overflow: auto;
 }
 .document {
-    flex: 1 0 auto;
+}
+.document .layers{
+    position: relative;
+    outline: 1px dashed #444;
+}
+.document .layers .layer{
+    /* background: #ccc; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.panel--layers .layer.active{
+    border: 1px solid dodgerblue;
 }
 #panels {
     flex: 0 0 200px;

@@ -28,19 +28,20 @@ class App {
         const doc = new CanvasDocument(
             this,
             this.view.dom.documentsEl,
-            500, 400
+            400, 300
         );
+        this.state = new State(doc);
         const layersPanel = new LayersPanel(
             this,
             'Layers', 
             this.view.dom.panelsEl
         );
-        this.state = new State(doc);
         this.documents.push(doc);
         this.panels.push(layersPanel);
         document.addEventListener('mousemove', e => this.onEvent(e));
         document.addEventListener('mousedown', e => this.onEvent(e));
         document.addEventListener('mouseup', e => this.onEvent(e));
+        document.addEventListener('click', e => this.onEvent(e));
         window.requestAnimationFrame(t => this.onEvent(t));
     }
 
@@ -67,7 +68,8 @@ class App {
         this.observers.push({
             type: eventName,
             cb
-        })
+        });
+        console.log(eventName, 'subscribed');
     }
 }
 
