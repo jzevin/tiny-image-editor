@@ -53,7 +53,7 @@ body {
 .document {
     flex: 1 0 auto;
 }
-#controls {
+#panels {
     flex: 0 0 200px;
     background-color: #444;
 }
